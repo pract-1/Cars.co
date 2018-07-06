@@ -2,6 +2,8 @@ const create = (req, res, next) => {
   // used
   const db = req.app.get("db");
   const { name, price, image } = req.body;
+  console.log(req.body);
+
   db.create_product([name, price, image])
     .then(() => res.status(200).send())
     .catch(e => res.status(500).send("Something is wrong"));
