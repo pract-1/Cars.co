@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Product from "../Product/Product";
 import axios from "axios";
+import "./Dashboard.css";
 
 class Dashboard extends Component {
   constructor(props) {
@@ -22,12 +23,19 @@ class Dashboard extends Component {
     let invenList = this.props.inventory.map((e, i) => {
       return (
         <div key={i}>
-          <div>
-            name: {e.name} ${e.price} <img src={e.image} />
+          <div className="prod">
+            <div>
+              <img className="pic" src={e.image} width="320" height="200" />
+            </div>
+            <div>
+              Name: {e.name} ${e.price}
+              <div className="delete-button">
+                <button onClick={id => this.handleDelete(e.product_id)}>
+                  delete
+                </button>
+              </div>
+            </div>
           </div>
-          <button onClick={id => this.handleDelete(e.product_id)}>
-            delete
-          </button>
         </div>
       );
     });

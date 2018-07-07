@@ -1,0 +1,21 @@
+.prod {
+  margin-top: 20px;
+  background-color: #c4513e;
+  margin-bottom: 20px;
+  border: 2px solid #c4513e;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  width: 600px;
+}
+.pic {
+  border: 2px solid #c4513e;
+  border-radius: 10px;
+}
+.delete-button {
+  padding-top: 20px;
+}
