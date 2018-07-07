@@ -1,0 +1,19 @@
+.forms {
+  height: 520px;
+  width: 450px;
+  background-color: #6ed58d;
+  border-radius: 20px;
+}
+.formsheader {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.forms-button {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+}

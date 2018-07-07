@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./Form.css";
 
 class Form extends Component {
   constructor() {
@@ -43,30 +44,53 @@ class Form extends Component {
 
     return (
       <div>
-        <input
-          value={this.state.productName}
-          className="name"
-          placeholder="Name"
-          onChange={e => this.handleName(e.target.value)}
-        />
-        <input
-          value={this.state.imageUrl}
-          className="image"
-          placeholder="Image"
-          onChange={e => this.handleImage(e.target.value)}
-        />
-        <input
-          value={this.state.price}
-          className="price"
-          placeholder="Price"
-          onChange={e => this.handlePrice(e.target.value)}
-        />
-        <button className="button" onClick={id => this.handleInventory(id)}>
-          Add to Inventory
-        </button>
-        <button className="button" onClick={() => this.handleCancel()}>
-          Cancel
-        </button>
+        <div className="forms">
+          <div className="formsheader">
+            <h1>Add New Cars</h1>
+          </div>
+          <div>
+            <div>
+              <div>
+                <h3> Brand </h3>
+                <input
+                  value={this.state.productName}
+                  className="name"
+                  placeholder="Name"
+                  onChange={e => this.handleName(e.target.value)}
+                />
+              </div>
+              <div>
+                <h3> Image </h3>
+                <input
+                  value={this.state.imageUrl}
+                  className="image"
+                  placeholder="URL"
+                  onChange={e => this.handleImage(e.target.value)}
+                />
+              </div>
+              <div>
+                <h3> Price </h3>
+                <input
+                  value={this.state.price}
+                  className="price"
+                  placeholder="Price"
+                  onChange={e => this.handlePrice(e.target.value)}
+                />
+              </div>
+            </div>
+            <div className="forms-button">
+              <button
+                className="button"
+                onClick={id => this.handleInventory(id)}
+              >
+                Add to Inventory
+              </button>
+              <button className="button" onClick={() => this.handleCancel()}>
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
