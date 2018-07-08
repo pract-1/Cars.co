@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import axios from "axios";
 import Dashboard from "../Dashboard/Dashboard";
 import Form from "../Form/Form";
-import Header from "../Header/Header";
 import "./Inventory.css";
+import { Link } from "react-router-dom";
 
 class InventoryL extends Component {
   constructor() {
@@ -23,7 +23,7 @@ class InventoryL extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <div className="Apps">
         <div className="info">
           <div>
             <Dashboard

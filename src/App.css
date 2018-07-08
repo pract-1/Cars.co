@@ -28,3 +28,15 @@
 /* .footer{
 
 } */
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: stretch;
+  color: white;
+}
+.nava {
+  color: white;
+}

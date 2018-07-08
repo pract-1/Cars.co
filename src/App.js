@@ -3,6 +3,8 @@ import axios from "axios";
 import "./App.css";
 import InventoryL from "./component/Inventory/Inventory";
 import Header from "./component/Header/Header";
+import { NavLink } from "react-router-dom";
+import routes from "./routes";
 
 class App extends Component {
   constructor() {
@@ -26,9 +28,9 @@ class App extends Component {
         <div className="header">
           <Header />
         </div>
-        <div className="info">
-          <InventoryL />
-        </div>
+
+        <div className="info" />
+        {routes}
         <footer className="footer"> Abdul Kanjo</footer>
       </div>
     );

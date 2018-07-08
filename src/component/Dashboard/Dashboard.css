@@ -12,8 +12,6 @@
   width: 550px;
   color: white;
   font-family: Georgia, serif;
-  position: relative;
-  right: 110px;
 }
 .pic {
   border-radius: 20px;
@@ -40,8 +38,6 @@
 }
 
 .divider {
-  position: relative;
-  right: 110px;
   height: 2px;
   color: rgb(217, 48, 52);
   background-color: rgb(217, 48, 52);
