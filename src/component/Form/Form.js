@@ -46,12 +46,12 @@ class Form extends Component {
       <div>
         <div className="forms">
           <div className="formsheader">
-            <h1>Add New Cars</h1>
+            <h1>Add New Car</h1>
           </div>
           <div>
             <div>
               <div>
-                <h3> Brand </h3>
+                <h3 className="input-title"> Brand </h3>
                 <input
                   value={this.state.productName}
                   className="name"
@@ -60,19 +60,19 @@ class Form extends Component {
                 />
               </div>
               <div>
-                <h3> Image </h3>
+                <h3 className="input-title"> Image </h3>
                 <input
                   value={this.state.imageUrl}
-                  className="image"
+                  className="name"
                   placeholder="URL"
                   onChange={e => this.handleImage(e.target.value)}
                 />
               </div>
               <div>
-                <h3> Price </h3>
+                <h3 className="input-title"> Price </h3>
                 <input
                   value={this.state.price}
-                  className="price"
+                  className="name"
                   placeholder="Price"
                   onChange={e => this.handlePrice(e.target.value)}
                 />

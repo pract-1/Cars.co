@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: url(https://image.jimcdn.com/app/cms/image/transf/none/path/s2c92fb02c94e873f/backgroundarea/ife9316b1706c010e/version/1472183700/image.jpg);
 }
 
 .dash {
@@ -19,3 +20,6 @@
   align-items: center;
   align-content: center;
 }
+/* .footer{
+
+} */

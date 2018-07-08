@@ -31,6 +31,7 @@ class App extends Component {
           <Dashboard inventory={this.state.inventory} get={this.gettingProd} />
           <Form get={this.gettingProd} />
         </div>
+        <footer className="footer"> Abdul Kanjo</footer>
       </div>
     );
   }

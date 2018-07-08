@@ -27,11 +27,12 @@ class Dashboard extends Component {
             <div>
               <img className="pic" src={e.image} width="320" height="200" />
             </div>
-            <div>
-              Name: {e.name} ${e.price}
+            <div className="information">
+              <div> {e.name}</div>
+              <div className="price">Price: ${e.price}</div>
               <div className="delete-button">
                 <button onClick={id => this.handleDelete(e.product_id)}>
-                  delete
+                  Remove
                 </button>
               </div>
             </div>

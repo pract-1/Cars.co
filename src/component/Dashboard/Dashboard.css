@@ -1,8 +1,8 @@
 .prod {
   margin-top: 20px;
-  background-color: #c4513e;
+  background-color: #555659;
   margin-bottom: 20px;
-  border: 2px solid #c4513e;
+  border: 2px solid #555659;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
@@ -10,12 +10,28 @@
   justify-content: space-around;
   align-items: center;
   align-content: stretch;
-  width: 600px;
+  width: 550px;
+  color: white;
+  font-family: Georgia, serif;
 }
 .pic {
-  border: 2px solid #c4513e;
+  border: 2px solid #555659;
   border-radius: 10px;
 }
 .delete-button {
   padding-top: 20px;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+.fix {
+  padding-top: 15px;
+}
+.price {
+  padding: 40px;
 }
