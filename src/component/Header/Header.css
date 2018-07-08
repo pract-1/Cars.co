@@ -1,6 +1,5 @@
 .header {
   height: 120px;
-  background-color: #555659;
   font-weight: 700;
   font-size: 30px;
   color: #fff;
@@ -14,4 +13,14 @@
 }
 .logo {
   padding-top: 5px;
+}
+
+.dividerr {
+  position: relative;
+  right: 110px;
+  height: 2px;
+  color: rgb(217, 48, 52);
+  background-color: rgb(217, 48, 52);
+  border: none;
+  width: 120vw;
 }

@@ -22,20 +22,23 @@ class Dashboard extends Component {
     console.log(this.props.inventory);
     let invenList = this.props.inventory.map((e, i) => {
       return (
-        <div key={i}>
-          <div className="prod">
-            <div>
-              <img className="pic" src={e.image} width="320" height="200" />
-            </div>
-            <div className="information">
-              <div> {e.name}</div>
-              <div className="price">Price: ${e.price}</div>
-              <div className="delete-button">
-                <button onClick={id => this.handleDelete(e.product_id)}>
-                  Remove
-                </button>
+        <div className="push">
+          <div key={i}>
+            <div className="prod">
+              <div>
+                <img className="pic" src={e.image} width="320" height="200" />
+              </div>
+              <div className="information">
+                <div> {e.name}</div>
+                <div className="price">Price: ${e.price}</div>
+                <div className="delete-button">
+                  <button onClick={id => this.handleDelete(e.product_id)}>
+                    Remove
+                  </button>
+                </div>
               </div>
             </div>
+            <hr className="divider" />
           </div>
         </div>
       );

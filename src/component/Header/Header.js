@@ -15,6 +15,7 @@ export default function Header() {
           <div>Cars.co</div>
         </div>
       </div>
+      <hr className="dividerr" />
     </div>
   );
 }

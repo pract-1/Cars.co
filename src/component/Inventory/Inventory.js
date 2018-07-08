@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import axios from "axios";
-import "./App.css";
-import InventoryL from "./component/Inventory/Inventory";
-import Header from "./component/Header/Header";
+import Dashboard from "../Dashboard/Dashboard";
+import Form from "../Form/Form";
+import Header from "../Header/Header";
+import "./Inventory.css";
 
-class App extends Component {
+class InventoryL extends Component {
   constructor() {
     super();
     this.state = {
@@ -23,16 +24,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="header">
-          <Header />
-        </div>
         <div className="info">
-          <InventoryL />
+          <div>
+            <Dashboard
+              inventory={this.state.inventory}
+              get={this.gettingProd}
+            />
+          </div>
+          <div>
+            <Form get={this.gettingProd} />
+          </div>
         </div>
-        <footer className="footer"> Abdul Kanjo</footer>
       </div>
     );
   }
 }
 
-export default App;
+export default InventoryL;
