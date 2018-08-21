@@ -12,11 +12,9 @@ massive(process.env.CONNECTION_STRING)
   })
   .catch(e => console.log(e));
 
-// app.get("/api/product", controller.getOne);
 app.get("/api/inventory", controller.getAll); //used
 app.post("/api/product", controller.create);
 app.delete("/api/product/:id", controller.deleteProduct);
-// app.put("/api/product/:id", controller.update);
 
 const port = 3001;
 app.listen(port, () => {

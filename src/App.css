@@ -1,11 +1,10 @@
-.App {
+body {
   text-align: center;
   background: url(https://i.pinimg.com/originals/a4/53/ae/a453ae44949b72efe226aaeec1c54708.jpg)
     no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .dash {
