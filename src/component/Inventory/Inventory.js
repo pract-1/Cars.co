@@ -3,7 +3,6 @@ import axios from "axios";
 import Dashboard from "../Dashboard/Dashboard";
 import Form from "../Form/Form";
 import "./Inventory.css";
-import { Link } from "react-router-dom";
 
 class InventoryL extends Component {
   constructor() {

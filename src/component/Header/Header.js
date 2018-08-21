@@ -19,13 +19,24 @@ export default function Header() {
           <div>Cars.co</div>
         </div>
         <div id="Inventory-but">
-          <NavLink
-            className="nava"
-            to="/inventory"
-            style={{ textDecoration: "none" }}
-          >
-            Inventory
-          </NavLink>
+          <div>
+            <NavLink
+              className="nava"
+              to="/inventory"
+              style={{ textDecoration: "none" }}
+            >
+              Inventory
+            </NavLink>
+          </div>
+          <div>
+            <NavLink
+              className="nava"
+              to="/login"
+              style={{ textDecoration: "none" }}
+            >
+              Login
+            </NavLink>
+          </div>
         </div>
       </div>
       <hr className="dividerr" />

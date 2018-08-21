@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import "./home.css";
 
 class Home extends Component {
@@ -27,7 +26,13 @@ class Home extends Component {
             <div key={i}>
               <div className="prod">
                 <div>
-                  <img className="pic" src={e.image} width="320" height="200" />
+                  <img
+                    alt="prop"
+                    className="pic"
+                    src={e.image}
+                    width="320"
+                    height="200"
+                  />
                 </div>
                 <div className="information">
                   <div> {e.name}</div>

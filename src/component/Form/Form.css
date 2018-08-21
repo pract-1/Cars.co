@@ -3,8 +3,10 @@
   width: 450px;
   border: 2px solid rgb(217, 48, 52);
   border-radius: 20px;
-  position: relative;
-  left: 40px;
+  position: fixed;
+  bottom: 0px;
+  right: 100px;
+  top: 200px;
 }
 .formsheader {
   padding-top: 20px;
