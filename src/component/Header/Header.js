@@ -45,7 +45,7 @@ class Header extends Component {
                 Inventory
               </NavLink>
             </div>
-            <div>
+            {/* <div>
               <NavLink
                 className="nava"
                 to="/login"
@@ -53,7 +53,7 @@ class Header extends Component {
               >
                 Login
               </NavLink>
-            </div>
+            </div> */}
           </div>
         </div>
         <hr className="dividerr" />
