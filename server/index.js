@@ -9,6 +9,7 @@ const strategy = require("./strategy");
 const { logout, login, getUser } = require("./auth_controller");
 const app = express();
 app.use(bodyParser.json());
+// this is a test 
 
 massive(process.env.CONNECTION_STRING)
   .then(db => {

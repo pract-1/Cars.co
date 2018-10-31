@@ -11,7 +11,8 @@ class App extends Component {
       inventory: []
     };
     this.gettingProd = this.gettingProd.bind(this);
-  }
+  }//this is a test
+  
   componentDidMount() {
     this.gettingProd();
   }
